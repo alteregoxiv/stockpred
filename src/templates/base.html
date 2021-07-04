@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width , initial-scale=1">
+
+                <title>
+                        {% block title %}
+                                StockPred
+                        {% endblock %}
+                </title>
+
+                {% block stylesheets %}
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+                        <link rel="stylesheet" href="/static/css/base.css">
+                {% endblock %}
+        </head>
+        <body>
+                <script src="/static/js/today.js"></script>    
+
+                {% block navbar %}
+                        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+                            <div class="navbar-brand">
+                                <span class="navbar-item">
+                                    StockPred
+                                </span>
+                            </div>
+                        </nav> 
+                {%endblock%}
+
+                <div class="main">
+                    {% block tabs %}
+                            <div class="tabs is-boxed">
+                                <ul>
+                                    <li class="is-active">
+                                      <a>
+                                        <span>Amazon</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a>
+                                        <span>Google</span>
+                                      </a>
+                                    </li>
+                                </ul>
+                            </div>
+                    {% endblock %}
+
+                    {% block input %}
+                            <div class="dinput">
+                                    <center>
+                                        <div class="date">
+                                            <h1 id="dec">Enter date for closing stock : </h1>
+                                            <input id="day" type="date">
+                                        </div>
+
+                                        <button id="but">Predict</button>
+                                    </center>
+                            </div>
+                    {% endblock %}
+                </div>
+        </body>

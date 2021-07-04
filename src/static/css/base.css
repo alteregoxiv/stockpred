@@ -1,0 +1,65 @@
+.navbar{
+
+    height: 8vh;
+
+}
+
+.navbar-item{
+
+    font-weight: bold;
+    font-size: 6vw;
+
+}
+
+.tabs{
+
+    padding-top: 3vh;
+    font-size: 20px;
+
+}
+
+.main{
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 79vh;
+
+}
+
+.dinput{
+
+    border: 1px solid grey;
+    border-radius: 0.3vw;
+    width: 100%;
+    height: 100%;
+
+}
+
+input{
+
+    font-size: 50px;
+    border-radius: 0.3vw;
+
+}
+
+.date{
+
+    padding-top: 20vh;
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+}
+
+#dec{
+
+    font-size: 60px;
+    padding-bottom: 2vh;
+
+}
+
+#but{
+
+    font-size: 30px;
+    margin-top: 3vh;
+
+}
