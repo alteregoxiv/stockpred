@@ -1,2 +1,6 @@
-let today = new Date().toISOString().substr(0, 10);
-document.querySelector("#day").value = today;
+window.onload = function(){
+
+    today = new Date().toLocaleDateString().split('/');
+    document.getElementById('day').value = today[2] + "-" + today[1] + "-" + today[0];
+
+}
