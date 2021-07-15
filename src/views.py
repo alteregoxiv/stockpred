@@ -51,4 +51,4 @@ def todate():
     acn = sc.inverse_transform(ac)
     print(acn[len(acn)-1])
 
-    return jsonify({"dc" : acn[len(acn)-1][0]})
+    return jsonify({"dc" : acn[len(acn)-1][0] , "da" : d})

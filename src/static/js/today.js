@@ -26,11 +26,11 @@ function predict(pdate){
 
     })
     .then(function(res){
-
-        console.log(res);
+        
+        document.getElementById("finres").innerHTML += res['da'][2] + "/" + res['da'][1] + "/" + res['da'][0] + " : " + res['dc'].toFixed(2);
         document.getElementById("loader").classList.remove('loader');
         document.getElementsByClassName("output")[0].classList.remove('hide');
-
+        
     }).catch(console.log);
 
 }
