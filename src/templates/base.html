@@ -46,10 +46,10 @@
                                     <center>
                                         <div class="date">
                                             <h1 id="dec">Enter date for closing stock : </h1>
-                                            <input id="day" type="date">
+                                            <input id="day" type="date" min="2019-02-01">
                                         </div>
 
-                                        <button id="but">Predict</button>
+                                        <button id="but" onclick=predict()>Predict</button>
                                     </center>
                             </div>
                     {% endblock %}
