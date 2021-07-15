@@ -19,7 +19,7 @@
                 <script src="/static/js/today.js"></script>    
 
                 {% block navbar %}
-                        <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+                        <nav class="navbar nav" role="navigation" aria-label="main navigation">
                             <div class="navbar-brand">
                                 <span class="navbar-item">
                                     StockPred
@@ -27,7 +27,8 @@
                             </div>
                         </nav> 
                 {%endblock%}
-
+                
+                <section class="cont1">
                 <div class="main">
                     {% block tabs %}
                             <div class="tabs is-boxed">
@@ -54,4 +55,14 @@
                             </div>
                     {% endblock %}
                 </div>
+
+                <div class="result">
+                    <div class="loader" id="loader">
+                    </div>
+
+                    <div class="output hide">
+                        <button id="obut" onclick=back()>Back</button>
+                    </div>
+                </div>
+                </section>
         </body>

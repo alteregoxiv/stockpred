@@ -6,6 +6,10 @@ window.onload = function(){
 }
 
 function predict(pdate){
+    
+    document.getElementById("loader").classList.add('loader');
+    document.getElementsByClassName('main')[0].classList.add('slide');
+    document.getElementsByClassName('result')[0].classList.add('slide');
 
     const val = document.getElementById('day').value;
     
@@ -24,7 +28,17 @@ function predict(pdate){
     .then(function(res){
 
         console.log(res);
+        document.getElementById("loader").classList.remove('loader');
+        document.getElementsByClassName("output")[0].classList.remove('hide');
 
     }).catch(console.log);
+
+}
+
+function back(){
+
+    document.getElementsByClassName("main")[0].classList.remove('slide');
+    document.getElementsByClassName("result")[0].classList.remove('slide');
+    document.getElementsByClassName("output")[0].classList.add('hide');
 
 }
