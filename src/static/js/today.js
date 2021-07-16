@@ -40,5 +40,6 @@ function back(){
     document.getElementsByClassName("main")[0].classList.remove('slide');
     document.getElementsByClassName("result")[0].classList.remove('slide');
     document.getElementsByClassName("output")[0].classList.add('hide');
+    document.getElementById("finres").innerHTML = "Closing Stock on  ";
 
 }

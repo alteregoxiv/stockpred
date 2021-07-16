@@ -29,46 +29,46 @@
                 {%endblock%}
                 
                 <section class="cont1">
-                <div class="main">
-                    {% block tabs %}
-                            <div class="tabs is-boxed">
-                                <ul>
-                                    <li class="is-active">
-                                      <a>
-                                        <span>Amazon</span>
-                                      </a>
-                                    </li>
-                                </ul>
-                            </div>
-                    {% endblock %}
+                    <div class="main">
+                        {% block tabs %}
+                                <div class="tabs is-boxed">
+                                    <ul>
+                                        <li class="is-active">
+                                          <a>
+                                            <span>Amazon</span>
+                                          </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        {% endblock %}
 
-                    {% block input %}
-                            <div class="dinput">
-                                    <center>
-                                        <div class="date">
-                                            <h1 id="dec">Enter date for closing stock : </h1>
-                                            <input id="day" type="date" min="2019-02-01">
-                                        </div>
+                        {% block input %}
+                                <div class="dinput">
+                                        <center>
+                                            <div class="date">
+                                                <h1 id="dec">Enter date for closing stock : </h1>
+                                                <input id="day" type="date" min="2019-02-01">
+                                            </div>
 
-                                        <button id="but" onclick=predict()>Predict</button>
-                                    </center>
-                            </div>
-                    {% endblock %}
-                </div>
-
-                <div class="result">
-                    <div class="loader" id="loader">
+                                            <button id="but" onclick=predict()>Predict</button>
+                                        </center>
+                                </div>
+                        {% endblock %}
                     </div>
 
-                    <div class="output hide">
-                        <center>
-                            <div class="final">
-                                <h1 id="finres">Closing Stock on  </h1>
-                            </div>
+                    <div class="result">
+                        <div class="loader" id="loader">
+                        </div>
 
-                            <button id="obut" onclick=back()>Back</button>
-                        </center>
+                        <div class="output hide">
+                            <center>
+                                <div class="final">
+                                    <h1 id="finres">Closing Stock on  </h1>
+                                </div>
+
+                                <button id="obut" onclick=back()>Back</button>
+                            </center>
+                        </div>
                     </div>
-                </div>
                 </section>
         </body>
