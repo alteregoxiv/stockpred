@@ -13,6 +13,9 @@
                 {% block stylesheets %}
                         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
                         <link rel="stylesheet" href="/static/css/base.css">
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet"> 
                 {% endblock %}
         </head>
         <body>
@@ -50,7 +53,11 @@
                                                 <input id="day" type="date" min="2019-02-01">
                                             </div>
 
-                                            <button id="but" onclick=predict()>Predict</button>
+                                            <div class="box-1">
+                                                <div class="btn btn-one" onclick=predict()>
+                                                    <span>PREDICT</span>
+                                                </div>
+                                            </div>
                                         </center>
                                 </div>
                         {% endblock %}
@@ -66,7 +73,11 @@
                                     <h1 id="finres">Closing Stock on  </h1>
                                 </div>
 
-                                <button id="obut" onclick=back()>Back</button>
+                                <div class="box-1">
+                                    <div class="btn btn-one" onclick=back()>
+                                        <span>BACK</span>
+                                    </div>
+                                </div>
                             </center>
                         </div>
                     </div>
