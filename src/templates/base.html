@@ -20,18 +20,18 @@
         </head>
         <body>
                 <script src="/static/js/today.js"></script>    
-
-                {% block navbar %}
+                
+                <section class="cont1">
+                    {% block navbar %}
                         <nav class="navbar nav" role="navigation" aria-label="main navigation">
                             <div class="navbar-brand">
                                 <span class="navbar-item">
                                     StockPred
                                 </span>
                             </div>
-                        </nav> 
-                {%endblock%}
-                
-                <section class="cont1">
+                        </nav>
+                    {%endblock%}
+
                     <div class="main">
                         {% block tabs %}
                                 <div class="tabs is-boxed">
@@ -49,7 +49,7 @@
                                 <div class="dinput">
                                         <center>
                                             <div class="date">
-                                                <h1 id="dec">Enter date for closing stock : </h1>
+                                                <h1 id="dec">Enter date for closing stock ( > 01/02/2019) : </h1>
                                                 <input id="day" type="date" min="2019-02-01">
                                             </div>
 
@@ -83,3 +83,4 @@
                     </div>
                 </section>
         </body>
+</html>

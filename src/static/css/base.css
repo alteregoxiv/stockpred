@@ -1,13 +1,13 @@
 .navbar{
 
-    height: 12vh;
+    height: 10%;
 
 }
 
 .navbar-item{
 
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 90px;
     color: white;
 
 }
@@ -27,7 +27,7 @@
     color: white;
     float: left;
     width: 50%;
-    height: 88vh;
+    height: 90%;
     transition: all 1s ease-out;
 
 }
@@ -39,7 +39,7 @@
     background: black;
     float: left;
     width: 50%;
-    height: 88vh;
+    height: 90%;
     transition: all 1s ease-out;
 
 }
@@ -55,16 +55,16 @@ input{
 
 .date{
 
-    padding-top: 20vh;
-    padding-right: 2vw;
-    padding-left: 2vw;
+    margin-top: 20vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
 
 }
 
 #dec{
 
     font-size: 60px;
-    padding-bottom: 2vh;
+    margin-bottom: 2vh;
 
 }
 
@@ -87,7 +87,7 @@ input{
     height: 200px;
     width: 200px;
     margin: auto;
-    margin-top: 35vh;
+    margin-top: 30vh;
     border: 2px solid white;
     border-left: none;
     border-right: none;
@@ -97,7 +97,9 @@ input{
 .cont1{
 
     width: 200vw;
+    height: 100vh;
     font-family: 'Open Sans Condensed', sans-serif;
+    touch-action: none;
 
 }
 
@@ -188,4 +190,28 @@ input{
 .btn-one:hover::after {
 	opacity: 0;
 	transform: scale(0.1, 1);
+}
+
+
+@media screen and (max-height: 900px){
+
+    input{
+
+        font-size: 40px;
+
+    }
+
+    #dec{
+        
+        margin-top
+        font-size: 40px;
+
+    }
+    
+    .navbar-item{
+
+        font-size: 40px;
+
+    }
+
 }
